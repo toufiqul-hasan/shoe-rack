@@ -3,3 +3,17 @@
   top: 0;
   padding: 30px 20px;
 }
+
+.cart-btn {
+  background-color: #ff847c;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
+}
+
+.cart-btn:hover {
+  background-color: #e84a5f;
+}

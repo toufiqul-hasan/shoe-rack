@@ -11,6 +11,12 @@ const Cart = ({ cart }) => {
           <h4 key={item.id}>{item.name}</h4>
         ))}
       </div>
+      <div>
+        <button className="cart-btn">Choose One For Me</button>
+      </div>
+      <div>
+        <button className="cart-btn">Reset</button>
+      </div>
     </div>
   );
 };
