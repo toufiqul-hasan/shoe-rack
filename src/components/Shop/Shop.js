@@ -5,6 +5,7 @@ import "./Shop.css";
 
 const Shop = () => {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState([]);
 
   useEffect(() => {
     fetch("products.json")
@@ -13,7 +14,16 @@ const Shop = () => {
   }, []);
 
   const handleAddToCart = (selectedProduct) => {
-    console.log(selectedProduct);
+    let newCart = [];
+    const exists = cart.find((product) => product.id === selectedProduct.id);
+    if (!exists) {
+      newCart = [...cart, selectedProduct];
+    } 
+    else {
+      const rest = cart.filter((product) => product.id !== selectedProduct.id);
+      newCart = [...rest, exists];
+    }
+    setCart(newCart);
   };
 
   return (
@@ -28,7 +38,7 @@ const Shop = () => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart></Cart>
+        <Cart cart={cart}></Cart>
       </div>
     </div>
   );
