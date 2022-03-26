@@ -21,7 +21,12 @@ const Shop = () => {
     const exists = cart.find((product) => product.id === selectedProduct.id);
     if (!exists) {
       newCart = [...cart, selectedProduct];
-    } else {
+    } 
+    else if (exists) {
+      newCart = [...cart];
+      alert("Already Selected!");
+    } 
+    else {
       const rest = cart.filter((product) => product.id !== selectedProduct.id);
       newCart = [...rest, exists];
     }
