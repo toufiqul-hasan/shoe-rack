@@ -19,16 +19,22 @@ const Shop = () => {
   const handleAddToCart = (selectedProduct) => {
     let newCart = [];
     const exists = cart.find((product) => product.id === selectedProduct.id);
-    if (!exists) {
-      newCart = [...cart, selectedProduct];
-    } 
-    else if (exists) {
-      newCart = [...cart];
-      alert("Already Selected!");
-    } 
+    if(cart.length < 4){
+      if (!exists) {
+        newCart = [...cart, selectedProduct];
+      } 
+      else if (exists) {
+        newCart = [...cart];
+        alert("Already Selected!");
+      } 
+      else {
+        const rest = cart.filter((product) => product.id !== selectedProduct.id);
+        newCart = [...rest, exists];
+      }
+    }
     else {
-      const rest = cart.filter((product) => product.id !== selectedProduct.id);
-      newCart = [...rest, exists];
+      newCart = [...cart];
+      alert("Oops... Can't select more than four!");
     }
     setCart(newCart);
   };
