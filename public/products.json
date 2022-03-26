@@ -1,13 +1,13 @@
 [
   {
     "id": "1",
-    "name": "ULTRABOOST SHOES",
+    "name": "ULTRA BOOST",
     "price": 450,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/fbaf991a78bc4896a3e9ad7800abcec6_9366/Ultraboost_22_Shoes_Black_GZ0127_01_standard.jpg"
   },
   {
     "id": "2",
-    "name": "SUPERNOVA SHOES",
+    "name": "SUPER NOVA",
     "price": 245,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/69cbc73d0cb846889f89acbb011e68cb_9366/Supernova_Shoes_Black_S42722_01_standard.jpg"
   },
@@ -19,31 +19,31 @@
   },
   {
     "id": "4",
-    "name": "KAPTIR SHOES",
+    "name": "KAPTIR PRO",
     "price": 150,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0846e90b15144861b33dacf500e3cfd1_9366/Kaptir_2.0_Shoes_White_H00276_01_standard.jpg"
   },
   {
     "id": "5",
-    "name": "PULSE SHOES",
+    "name": "PULSE HUNTER",
     "price": 230,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/9a8256bb7ca34da49ff8ad5600bb2812_9366/4DFWD_Pulse_Shoes_White_Q46221_01_standard.jpg"
   },
   {
     "id": "6",
-    "name": "BOOST SHOES",
+    "name": "BOOST PRO",
     "price": 320,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e540bae86d5456aa034ada300ebf46c_9366/ZX_1K_Boost_Shoes_Grey_H00430_01_standard.jpg"
   },
   {
     "id": "7",
-    "name": "PRIMEBLUE SHOES",
+    "name": "PRIME BLUE",
     "price": 440,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0e03e7a2a9cb44dfac2bad6a00f95888_9366/NMD_R1_Primeblue_Shoes_White_GZ9261_01_standard.jpg"
   },
   {
     "id": "8",
-    "name": "DNA SHOES",
+    "name": "RACING DNA",
     "price": 200,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2cee64414e1f4f31baf1ae270099d950_9366/Lunar_New_Year_Ultraboost_DNA_Shoes_Black_GZ6074_01_standard.jpg"
   },
@@ -55,7 +55,7 @@
   },
   {
     "id": "10",
-    "name": "NOVA SHOES",
+    "name": "NOVA PRO",
     "price": 260,
     "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c2a18c4e3f104d52a697ad6a01477bb7_9366/NMD_R1_V2_Shoes_Black_GX6367_01_standard.jpg"
   },
