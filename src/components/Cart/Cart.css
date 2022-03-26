@@ -2,10 +2,11 @@
   position: sticky;
   top: 0;
   padding: 30px 20px;
+  color: #ffffff;
 }
 
 .cart-btn {
-  background-color: #ff847c;
+  background-color: #53a8b6;
   color: #ffffff;
   border: none;
   border-radius: 50px;
@@ -15,5 +16,5 @@
 }
 
 .cart-btn:hover {
-  background-color: #e84a5f;
+  background-color: #79c2d0;
 }
