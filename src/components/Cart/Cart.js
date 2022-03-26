@@ -8,9 +8,7 @@ const Cart = ({ cart, randomSelection, random, resetCart }) => {
       <hr />
       <div>
         {cart.map((item) => (
-          <h4 id="reset" key={item.id}>
-            {item.name}
-          </h4>
+          <h4 key={item.id}>{item.name}</h4>
         ))}
       </div>
       <div>
