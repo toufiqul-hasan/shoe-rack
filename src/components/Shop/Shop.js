@@ -32,6 +32,13 @@ const Shop = () => {
     document.getElementById("random-shoe").innerHTML = random.name;
   };
 
+  const resetCart = () => {
+    let newCart = cart;
+    newCart = [];
+    setCart(newCart);
+    document.getElementById("random-shoe").innerHTML = "";
+  };
+
   return (
     <div className="shop-container">
       <div className="products-container">
@@ -44,7 +51,11 @@ const Shop = () => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={cart} randomSelection={randomSelection}></Cart>
+        <Cart
+          cart={cart}
+          randomSelection={randomSelection}
+          resetCart={resetCart}
+        ></Cart>
       </div>
     </div>
   );
