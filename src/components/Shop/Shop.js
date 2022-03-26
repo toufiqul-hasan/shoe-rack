@@ -42,7 +42,7 @@ const Shop = () => {
   const randomSelection = () => {
     const newCart = cart;
     const random = newCart[Math.floor(Math.random() * newCart.length)];
-    document.getElementById("random-shoe").innerHTML = random.name;
+    document.getElementById("random-shoe").innerHTML = `<img src="${random.img}">${random.name}`;
   };
 
   const resetCart = () => {
