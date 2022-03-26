@@ -26,7 +26,7 @@ const Shop = () => {
       else if (exists) {
         newCart = [...cart];
         alert("Already Selected!");
-      } 
+      }
       else {
         const rest = cart.filter((product) => product.id !== selectedProduct.id);
         newCart = [...rest, exists];
@@ -40,9 +40,17 @@ const Shop = () => {
   };
 
   const randomSelection = () => {
-    const newCart = cart;
-    const random = newCart[Math.floor(Math.random() * newCart.length)];
-    document.getElementById("random-shoe").innerHTML = `<img src="${random.img}">${random.name}`;
+    if (cart.length > 0) {
+      const newCart = cart;
+      const random = newCart[Math.floor(Math.random() * newCart.length)];
+      document.getElementById("random-shoe").innerHTML = `<img src="${random.img}">${random.name}`;
+      let brandNewCart = cart;
+      brandNewCart = [];
+      setCart(brandNewCart);
+    } 
+    else {
+      return;
+    }
   };
 
   const resetCart = () => {
