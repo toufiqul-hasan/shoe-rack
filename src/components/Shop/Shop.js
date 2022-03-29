@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Product from "../Product/Product";
-import Qna1 from "../Qna1/Qna1";
-import Qna2 from "../Qna2/Qna2";
-import Qna3 from "../Qna3/Qna3";
 import "./Shop.css";
 
 const Shop = () => {
@@ -70,15 +67,6 @@ const Shop = () => {
             handleAddToCart={handleAddToCart}
           ></Product>
         ))}
-        <div>
-          <Qna1></Qna1>
-        </div>
-        <div>
-          <Qna2></Qna2>
-        </div>
-        <div>
-          <Qna3></Qna3>
-        </div>
       </div>
       <div className="cart-container">
         <Cart
