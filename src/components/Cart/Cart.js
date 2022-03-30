@@ -1,6 +1,6 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faDeleteLeft } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
 
 const Cart = ({ cart, randomSelection, random, resetCart }) => {
@@ -12,7 +12,8 @@ const Cart = ({ cart, randomSelection, random, resetCart }) => {
         {cart.map((item) => (
           <h4 key={item.id}>
             <img key={item.id} src={item.img} alt="" />
-            {item.name}<FontAwesomeIcon icon={faDeleteLeft} color="#ffffff" size="2x"></FontAwesomeIcon>
+            {item.name}
+            {/* <FontAwesomeIcon icon={faDeleteLeft} color="#ffffff" size="2x"></FontAwesomeIcon> */}
           </h4>
         ))}
       </div>
