@@ -36,6 +36,12 @@ const Shop = () => {
     setCart(newCart);
   };
 
+  const handleRemoveProduct = () => {
+    let newCart = cart;
+    newCart = [];
+    setCart(newCart);
+  };
+
   const randomSelection = () => {
     if (cart.length > 0) {
       const newCart = cart;
@@ -71,6 +77,7 @@ const Shop = () => {
       <div className="cart-container">
         <Cart
           cart={cart}
+          handleRemoveProduct={handleRemoveProduct}
           randomSelection={randomSelection}
           resetCart={resetCart}
         ></Cart>
