@@ -19,6 +19,7 @@ const Shop = () => {
     if (cart.length < 4) {
       if (!exists) {
         newCart = [...cart, selectedProduct];
+        document.getElementById("random-shoe").innerHTML = "";
       } 
       else if (exists) {
         newCart = [...cart];
@@ -36,10 +37,9 @@ const Shop = () => {
     setCart(newCart);
   };
 
-  const handleRemoveProduct = () => {
-    let newCart = cart;
-    newCart = [];
-    setCart(newCart);
+  const handleRemoveProduct = (item) => {
+    const rest = cart.filter(product => product.id !== item.id);
+    setCart(rest);
   };
 
   const randomSelection = () => {

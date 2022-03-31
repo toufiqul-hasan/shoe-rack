@@ -47,3 +47,17 @@
     justify-content: center;
   }
 }
+
+@media only screen and (min-width: 993px) and (max-width: 1300px) {
+  .shop-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+}
